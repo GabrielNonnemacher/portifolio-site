@@ -1,0 +1,43 @@
+.body-certificates{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    background-color: var(--background-color-2);
+}
+
+.container-certificates {
+    height: 480px;
+    width: 80%;
+    max-width: 1160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(51, 68, 153, 0.23);
+}
+
+.title-certificates {
+    background-color: rebeccapurple;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container-certificates-cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.grad-certificates-images{
+    background-color: chocolate;
+    width: 80%;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+}
