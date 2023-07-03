@@ -32,25 +32,8 @@ export const INFORMATIONS = {
         description: "Come and learn a little more about my skills, knowledge and ambitions on this website created and developed by me."
     },
     Certificates: [
-        {
-            path: '../assets/images/certificado0001.png',
-            name: "Nome",
-            info: "infos sjdhasdksjk sjkdjkas jksjdja jkasjkd jksjks"
-        },
-        {
-            path: '../assets/images/certificado0001.png',
-            name: "Nome",
-            info: "infos sjdhasdksjk sjkdjkas jksjdja jkasjkd jksjks"
-        },
-        {
-            path: '../assets/images/certificado0001.png',
-            name: "Nome",
-            info: "infos sjdhasdksjk sjkdjkas jksjdja jkasjkd jksjks"
-        },
-        {
-            path: '../assets/images/certificado0001.png',
-            name: "Nome",
-            info: "infos sjdhasdksjk sjkdjkas jksjdja jkasjkd jksjks"
-        }
+        '../assets/images/certificado0001.png',
+        '../assets/images/certificado0002.png',
+        '../assets/images/certificado0003.png'
     ]
 };

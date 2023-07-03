@@ -61,10 +61,6 @@
     .name-header-simple {
         display: flex;
     }
-
-    /* .container-header {
-        justify-content: center;
-    } */
 }
 
 @media screen and (max-width: 648px) {

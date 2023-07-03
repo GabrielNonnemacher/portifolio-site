@@ -1,18 +1,39 @@
 <section class="body-certificates">
     <div class="container-certificates">
-        <h2 class="title-certificates">Certificates</h2>
+        <h2 class="title-certificates .f-24">Certificates</h2>
 
-        <div class="container-certificates-cards">
-            <ButtonNext></ButtonNext>
-
-            <div class="grad-certificates-images">
-                <CardCertificate path="{{certificate.path}}"
-                                 name="{{certificate.name}}"
-                                 info="{{certificate.info}}">
-                </CardCertificate>
+        <div class="container-images-certificates">
+            <div class="border-image">
+                <img class="a"
+                     src={{certificates[0]}}
+                     alt="Certificate from Author">
             </div>
 
-            <ButtonNext></ButtonNext>
+            <div class="border-image">
+                <img class="a"
+                     src={{certificates[1]}}
+                     alt="Certificate from Author">
+            </div>
+
+
+            <img *ngIf="certificatesPage > 0"
+                 class="a"
+                 src={{certificates[2]}}
+                 alt="Certificate from Author">
+        </div>
+
+        <div class="plus-certificates">
+            <button class="button-less-more-certificates"
+                    (click)="lessCertificates()"
+                    [disabled]="minCertificatePage()">
+                <mat-icon>expand_less</mat-icon> Less
+            </button>
+
+            <button class="button-less-more-certificates"
+                    (click)="moreCertificates()"
+                    [disabled]="false">
+                <mat-icon>expand_more</mat-icon> More
+            </button>
         </div>
     </div>
 </section>

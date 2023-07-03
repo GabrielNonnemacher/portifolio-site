@@ -9,8 +9,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { ButtonHeaderComponent } from './components/button-header/button-header.component';
 import { HomeComponent } from './components/home/home.component';
 import { CertificatesComponent } from './components/certificates/certificates.component';
-import { CardCertificateComponent } from './components/card-certificate/card-certificate.component';
-import { ButtonNextComponent } from './components/button-next/button-next.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +16,7 @@ import { ButtonNextComponent } from './components/button-next/button-next.compon
     HeaderComponent,
     ButtonHeaderComponent,
     HomeComponent,
-    CertificatesComponent,
-    CardCertificateComponent,
-    ButtonNextComponent,
+    CertificatesComponent
   ],
   imports: [
     BrowserModule,

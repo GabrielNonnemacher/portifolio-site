@@ -1,27 +1,34 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 import { INFORMATIONS } from 'src/assets/helpers/Informations';
-import { Certificate, CertificateDTO } from './models/certificate.model';
 
 @Component({
   selector: 'Certificates',
   templateUrl: './certificates.component.html',
   styleUrls: ['./certificates.component.css']
 })
-export class CertificatesComponent implements OnInit, OnDestroy {
-  constructor(){}
+export class CertificatesComponent implements OnDestroy {
+  constructor() {}
 
-  certificate: Certificate = {} as Certificate;
-  certificates: Certificate[] = [] as Certificate[];
+  certificatesPage = 0;
+  certificates = INFORMATIONS.Certificates;
   ngUnsubscribe = new Subject<void>();
 
-  public ngOnInit(): void {
-    this.composeCertificates();
+  public moreCertificates(): void {
+    console.log(this.certificatesPage)
+    this.certificatesPage += 1;
   }
 
-  private composeCertificates(): void {
-    this.certificates = INFORMATIONS.Certificates.map(CertificateDTO.mapperListView);
-    this.certificate = this.certificates[0];
+  public lessCertificates(): void {
+    console.log(this.certificatesPage)
+    if (!this.minCertificatePage()) {
+      this.certificatesPage -= 1;
+    }
+  }
+
+  public minCertificatePage(): boolean {
+    console.log(this.certificatesPage)
+    return this.certificatesPage === 0;
   }
 
   ngOnDestroy(): void {
