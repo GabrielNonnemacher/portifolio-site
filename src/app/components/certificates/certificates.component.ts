@@ -7,28 +7,44 @@ import { INFORMATIONS } from 'src/assets/helpers/Informations';
   templateUrl: './certificates.component.html',
   styleUrls: ['./certificates.component.css']
 })
-export class CertificatesComponent implements OnDestroy {
+export class CertificatesComponent implements OnInit, OnDestroy {
   constructor() {}
 
-  certificatesPage = 0;
-  certificates = INFORMATIONS.Certificates;
+  certificatesPage = 2;
+  listCertificates = INFORMATIONS.Certificates;
+  certificates: string[] = [] as string[];
   ngUnsubscribe = new Subject<void>();
 
+  ngOnInit(): void {
+    this.composeListCertificates();
+  }
+
+  private composeListCertificates(): void {
+    this.certificates = this.listCertificates.filter((item, index) => {
+      if (index < this.certificatesPage) return item;
+      return;
+    });
+  }
+
   public moreCertificates(): void {
-    console.log(this.certificatesPage)
-    this.certificatesPage += 1;
+    console.log(this.maxCertificatePage())
+    this.certificatesPage += 2;
+    this.composeListCertificates();
   }
 
   public lessCertificates(): void {
-    console.log(this.certificatesPage)
     if (!this.minCertificatePage()) {
-      this.certificatesPage -= 1;
+      this.certificatesPage -= 2;
+      this.composeListCertificates();
     }
   }
 
   public minCertificatePage(): boolean {
-    console.log(this.certificatesPage)
-    return this.certificatesPage === 0;
+    return this.certificatesPage === 2;
+  }
+
+  public maxCertificatePage(): boolean {
+    return this.listCertificates.length <= this.certificatesPage;
   }
 
   ngOnDestroy(): void {

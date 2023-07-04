@@ -14,7 +14,7 @@
 }
 
 .title-certificates {
-    height: 64px;
+    height: 144px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -24,13 +24,17 @@
     font-family: var(--font-poppins);
 }
 
+.medal-icon {
+    margin-left: 8px;
+    height: 48px;
+}
+
 .container-images-certificates {
     width: 100%;
-    min-height: 480px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .a {
@@ -43,8 +47,9 @@
 .border-image {
     width: 48%;
     height: 25vw;
-    max-height: 384px;
-    min-width: 400px;
+    max-height: 360px;
+    max-width: 520px;
+    margin-bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,16 +107,23 @@
     cursor: not-allowed;
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 880px) {
+
+    .title-certificates {
+        margin-top: 24px;
+        height: 80px;
+    }
+
     .container-images-certificates {
+        flex-wrap: nowrap;
         flex-direction: column;
         align-items: center;
-        height: 75vw;
+        max-width: 100%;
     }
 
     .border-image {
-        width: 70%;
-        height: 35vw;
-        min-width: 200px;
+        margin-bottom: 24px;
+        width: 100%;
+        height: 55vw;
     }
 }

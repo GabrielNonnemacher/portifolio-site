@@ -1,15 +1,21 @@
 <section class="body-certificates">
     <div class="container-certificates">
-        <h2 class="title-certificates .f-24">Certificates</h2>
+        <h2 class="title-certificates .f-24">
+            Certificates
+            <img class="medal-icon"
+                 src="../../../assets/images/medal-icon.png"
+                 alt="Medal icon">
+        </h2>
 
         <div class="container-images-certificates">
-            <div class="border-image">
+            <div class="border-image"
+                 *ngFor="let certificate of certificates">
                 <img class="a"
-                     src={{certificates[0]}}
+                     src={{certificate}}
                      alt="Certificate from Author">
             </div>
 
-            <div class="border-image">
+            <!-- <div class="border-image">
                 <img class="a"
                      src={{certificates[1]}}
                      alt="Certificate from Author">
@@ -19,7 +25,7 @@
             <img *ngIf="certificatesPage > 0"
                  class="a"
                  src={{certificates[2]}}
-                 alt="Certificate from Author">
+                 alt="Certificate from Author"> -->
         </div>
 
         <div class="plus-certificates">
@@ -31,7 +37,7 @@
 
             <button class="button-less-more-certificates"
                     (click)="moreCertificates()"
-                    [disabled]="false">
+                    [disabled]="maxCertificatePage()">
                 <mat-icon>expand_more</mat-icon> More
             </button>
         </div>
