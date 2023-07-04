@@ -34,6 +34,12 @@ export const INFORMATIONS = {
     Certificates: [
         '../assets/images/certificado0001.png',
         '../assets/images/certificado0002.png',
-        '../assets/images/certificado0003.png'
+        '../assets/images/certificado0001.png',
+        '../assets/images/certificado0002.png',
+        '../assets/images/certificado0001.png',
+        '../assets/images/certificado0002.png',
+        '../assets/images/certificado0001.png',
+        '../assets/images/certificado0002.png',
+        '../assets/images/certificado0001.png',
     ]
 };
