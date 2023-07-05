@@ -1,6 +1,10 @@
+.li-button-header {
+    list-style-type: none;
+}
+
 .body-button-header {
     height: 72px;
-    width: 100px;
+    width: 104px;
     border: none;
     cursor: pointer;
     position: relative;
@@ -8,7 +12,7 @@
 }
 
 .content-button-header {
-    font-size: 16px;
+    font-size: 14px;
     color: rgb(245, 245, 245);
 }
 

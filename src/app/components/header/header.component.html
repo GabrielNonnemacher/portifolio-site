@@ -1,4 +1,4 @@
-<div class="body-header">
+<header class="body-header">
     <div class="container-header">
         <div class="name-header">
             Gabriel Nonnemacher
@@ -8,11 +8,14 @@
             Gabriel
         </div>
 
-        <div class="container-buttons-header">
-            <Button-Header *ngFor="let button of contentButtonsHeader"
-                           title="{{button.title}}">
-            </Button-Header>
-        </div>
+        <nav>
+            <ul class="container-buttons-header">
+                <Button-Header *ngFor="let button of contentButtonsHeader"
+                               idLink="{{button.title}}"
+                               title="{{button.title}}">
+                </Button-Header>
+            </ul>
+        </nav>
 
         <button class="icon-menu">
             <div class="line-icon-menu"></div>
@@ -20,4 +23,4 @@
             <div class="line-icon-menu"></div>
         </button>
     </div>
-</div>
+</header>

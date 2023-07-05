@@ -9,5 +9,9 @@ export class ButtonHeaderComponent {
   constructor() {}
 
   @Input() title: string = "";
-  @Input() content: string = "";
+  @Input() idLink: string = "";
+
+  scrollPoint1(id: string) {
+    document.getElementById(id)?.scrollIntoView({behavior: "smooth"});
+  }
 }

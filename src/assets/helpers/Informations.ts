@@ -1,28 +1,20 @@
 export const INFORMATIONS = {
     ButtonsHeaderContents: [
         {
-            id: 1,
-            title: "Home",
-            content: "Home",
-            selected: true
+            id: "Certificates",
+            title: "Certificates"
         },
         {
-            id: 2,
-            title: "Projects",
-            content: "Projects",
-            selected: false
+            id: "Projects",
+            title: "Projects"
         },
         {
-            id: 3,
-            title: "About",
-            content: "About",
-            selected: false
+            id: "About",
+            title: "About Me"
         },
         {
-            id: 4,
-            title: "Contact",
-            content: "Contact",
-            selected: false
+            id: "Contacts",
+            title: "Contacts"
         }
     ],
     TextHome: {

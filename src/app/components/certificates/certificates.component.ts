@@ -27,7 +27,6 @@ export class CertificatesComponent implements OnInit, OnDestroy {
   }
 
   public moreCertificates(): void {
-    console.log(this.maxCertificatePage())
     this.certificatesPage += 2;
     this.composeListCertificates();
   }

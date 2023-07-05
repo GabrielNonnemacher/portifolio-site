@@ -1,5 +1,5 @@
 .body-header {
-    height: 72px;
+    height: 64px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: space-between;
 }
+
 
 .name-header,
 .name-header-simple {
@@ -31,7 +32,7 @@
 
 .container-buttons-header {
     height: 100%;
-    width: 424px;
+    width: 440px;
     display: flex;
     justify-content: space-between;
 }

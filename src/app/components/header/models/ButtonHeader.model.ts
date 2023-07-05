@@ -1,17 +1,13 @@
 export interface ButtonHeader {
-    id: number;
+    id: string;
     title: string;
-    content: string;
-    selected: boolean;
 }
 
 export class ButtonHeaderDTO {
     static mapperListView = (params: ButtonHeader): ButtonHeader => {
         return {
             id: params.id,
-            title: params.title,
-            content: params.content,
-            selected: params.selected
+            title: params.title
         } as ButtonHeader;
     }
 }
