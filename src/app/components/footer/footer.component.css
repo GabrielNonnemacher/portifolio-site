@@ -1,0 +1,15 @@
+.body-footer {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+
+.container-footer {
+    width: 80%;
+    max-width: 1160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

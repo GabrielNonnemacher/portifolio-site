@@ -1,1 +1,65 @@
-<p>footer works!</p>
+<footer class="body-footer">
+    <div class="container-footer">
+        <div class="informations-block-footer">
+            <div class="container-text-infos-footer">
+                <p class="title-text-infos-footer">
+                    {{produced.title}}
+                </p>
+
+                <p class="text-infos-footer">
+                    {{produced.text}}
+                </p>
+            </div>
+
+            <div class="container-text-infos-footer">
+                <p class="title-text-infos-footer">
+                    {{address.title}}
+                </p>
+
+                <div class="container-address-footer">
+                    <img src="{{address.icon}}" alt="Icon">
+
+                    <p class="text-infos-2-footer">
+                        {{address.text}}
+                    </p>
+                </div>
+            </div>
+
+            <div class="container-social-networks-footer">
+                <div *ngFor="let socialNetwork of socialNetworks.icons">
+                    <ButtonFooter link="{{socialNetwork.url}}"
+                                  icon="{{socialNetwork.icon}}">
+                    </ButtonFooter>
+                </div>
+            </div>
+
+            <div class="container-contacts-footer">
+                <p class="title-text-infos-footer">
+                    {{contacts.title}}
+                </p>
+
+                <div class="blocks-contacts-footer">
+                    <div class="container-phone-footer">
+                        <img src="{{contacts.icons[0].icon}}" alt="Icon">
+    
+                        <p class="text-phone-footer">
+                            {{contacts.icons[1].text}}
+                        </p>
+                    </div>
+
+                    <div class="container-mail-footer">
+                        <img src="{{contacts.icons[1].icon}}" alt="Icon">
+    
+                        <p class="text-mail-footer">
+                            {{contacts.icons[1].text}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rights-block-footer">
+            {{rights}}
+        </div>
+    </div>
+</footer>
