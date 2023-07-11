@@ -1,0 +1,118 @@
+.body-footer {
+    height: 336px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+
+.container-footer {
+    width: 80%;
+    max-width: 1160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.informations-block-footer {
+    width: 100%;
+    height: 264px;
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-text-infos-footer,
+.container-social-networks-footer,
+.container-contacts-footer {
+    width: 50%;
+    height: 120px;
+}
+
+.title-text-infos-footer {
+    width: 100%;
+    font-weight: 600;
+    color: var(--font-color);
+    font-size: 16px;
+}
+
+.text-infos-footer {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 16px;
+    color: var(--font-color);
+    font-size: 14px;
+    font-weight: 300;
+    height: 64px;
+}
+
+.socialNetwork-buttons-container {
+    display: flex;
+    margin-top: 16px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container-address-footer {
+    display: flex;
+}
+
+.icon-address-footer {
+    margin-top: 8px;
+}
+
+.text-infos-2-footer {
+    height: 32px;
+    margin: 0 8px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    color: var(--font-color);
+    margin-right: 20px;
+}
+
+.icon-address-footer,
+.container-phone-footer,
+.icon-mail-footer {
+    height: 32px;
+}
+
+.blocks-contacts-footer {
+    height: 80px;
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-phone-footer {
+    display: flex;
+    height: 32px;
+    width: 200px;
+    margin-bottom: 8px;
+}
+
+.text-phone-footer,
+.text-mail-footer {
+    height: 32px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    color: var(--font-color);
+}
+
+.container-mail-footer {
+    display: flex;
+    height: 32px;
+    width: 320px;
+}
+
+.rights-block-footer {
+    margin-top: 8px;
+    color: var(--font-color);
+    font-size: 12px;
+}

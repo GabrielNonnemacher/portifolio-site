@@ -24,10 +24,22 @@
     bottom: 0px;
     border-radius: 8px;
     background-color: rgb(245, 245, 245);
+    transition: 0.6 all;
 }
 
 .body-button-header:hover {
     .hover-button-header {
         display: flex;
+        animation: lineAnimationButtonHeader 1.2s;
+    }
+}
+
+@keyframes lineAnimationButtonHeader {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }

@@ -10,6 +10,7 @@ import { ButtonHeaderComponent } from './components/button-header/button-header.
 import { HomeComponent } from './components/home/home.component';
 import { CertificatesComponent } from './components/certificates/certificates.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ButtonFooterComponent } from './components/button-footer/button-footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ButtonHeaderComponent,
     HomeComponent,
     CertificatesComponent,
-    FooterComponent
+    FooterComponent,
+    ButtonFooterComponent
   ],
   imports: [
     BrowserModule,
