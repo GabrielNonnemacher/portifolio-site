@@ -7,6 +7,7 @@
     --font-poppins: 'Poppins', sans-serif;
     --font-name: 'Satisfy', cursive;
     --font-color: rgb(245, 245, 245);
+    --hover-color: rgb(127, 127, 227);
 }
 
 * {

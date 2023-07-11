@@ -11,25 +11,34 @@
                 </p>
             </div>
 
+            <div class="container-social-networks-footer">
+                <p class="title-text-infos-footer">
+                    {{socialNetworks.title}}
+                </p>
+
+                <div class="socialNetwork-buttons-container">
+                    <ButtonFooter *ngFor="let socialNetwork of socialNetworks.icons"
+                                  link="{{socialNetwork.url}}"
+                                  icon="{{socialNetwork.icon}}">
+                    </ButtonFooter>
+                </div>
+            </div>
+
             <div class="container-text-infos-footer">
                 <p class="title-text-infos-footer">
                     {{address.title}}
                 </p>
 
                 <div class="container-address-footer">
-                    <img src="{{address.icon}}" alt="Icon">
+                    <img class="icon-address-footer"
+                         src="{{address.icon}}"
+                         alt="Icon">
 
-                    <p class="text-infos-2-footer">
+                    <a class="text-infos-2-footer"
+                       target="_blank"
+                       href="{{address.link}}">
                         {{address.text}}
-                    </p>
-                </div>
-            </div>
-
-            <div class="container-social-networks-footer">
-                <div *ngFor="let socialNetwork of socialNetworks.icons">
-                    <ButtonFooter link="{{socialNetwork.url}}"
-                                  icon="{{socialNetwork.icon}}">
-                    </ButtonFooter>
+                    </a>
                 </div>
             </div>
 
@@ -40,16 +49,20 @@
 
                 <div class="blocks-contacts-footer">
                     <div class="container-phone-footer">
-                        <img src="{{contacts.icons[0].icon}}" alt="Icon">
-    
+                        <img class="icon-phone-footer"
+                             src="{{contacts.icons[0].icon}}"
+                             alt="Icon">
+
                         <p class="text-phone-footer">
-                            {{contacts.icons[1].text}}
+                            {{contacts.icons[0].text}}
                         </p>
                     </div>
 
                     <div class="container-mail-footer">
-                        <img src="{{contacts.icons[1].icon}}" alt="Icon">
-    
+                        <img class="icon-mail-footer"
+                             src="{{contacts.icons[1].icon}}"
+                             alt="Icon">
+
                         <p class="text-mail-footer">
                             {{contacts.icons[1].text}}
                         </p>

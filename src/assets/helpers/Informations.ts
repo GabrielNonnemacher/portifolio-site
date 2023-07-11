@@ -34,8 +34,8 @@ export const INFORMATIONS = {
         Address: {
             icon: '../assets/images/iconAddress.png',
             title: "Address",
-            text: "Harmonia, RS - CEP 95785-000"
-
+            text: "Harmonia, RS - CEP 95785-000",
+            link: 'https://www.google.com.br/maps/place/Harmonia,+RS,+95785-000/@-29.544264,-51.4420452,14z/data=!3m1!4b1!4m6!3m5!1s0x951bf8b286955ea9:0xe766f7b935db09f5!8m2!3d-29.5492312!4d-51.4242321!16s%2Fg%2F1yy3vlh0q?entry=ttu'
         },
         Contacts: {
             title: "Contact me",
