@@ -46,7 +46,7 @@ export class CertificatesComponent implements OnInit, OnDestroy {
     return this.listCertificates.length <= this.certificatesPage;
   }
 
-  ngOnDestroy(): void {
+  public ngOnDestroy(): void {
     this.ngUnsubscribe.next();
     this.ngUnsubscribe.complete();
   }

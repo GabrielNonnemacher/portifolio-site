@@ -12,6 +12,7 @@ import { CertificatesComponent } from './components/certificates/certificates.co
 import { FooterComponent } from './components/footer/footer.component';
 import { ButtonFooterComponent } from './components/button-footer/button-footer.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { BoxProjectsComponent } from './components/box-projects/box-projects.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
     CertificatesComponent,
     FooterComponent,
     ButtonFooterComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    BoxProjectsComponent
   ],
   imports: [
     BrowserModule,
