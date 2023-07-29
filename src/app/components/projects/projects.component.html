@@ -1,8 +1,16 @@
 <section id="Projects"
-   class="body-projects">
+         class="body-projects">
     <div class="container-projects">
         <h2 class="title-projects .f-24">
-            Projects
+            {{title}}
         </h2>
+
+        <div class="container-cards-projects">
+            <div class="body-card-project"
+                 *ngFor="let project of projects">
+                <BoxProjects [projectInput]="project">
+                </BoxProjects>
+            </div>
+        </div>
     </div>
 </section>

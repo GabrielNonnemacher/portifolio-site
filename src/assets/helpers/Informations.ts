@@ -80,5 +80,52 @@ export const INFORMATIONS = {
             ]
         },
         Rights: "© 2023 Gabriel Nonnemacher. All rights reserved."
+    },
+    Projects: {
+        Title : "Projects",
+        ListProjects : [
+            {
+                name: "Project Naruto",
+                text: "The Naruto Project is a Front-End project, which uses Angular as technology. The project aims to study and enrich the portfolio.",
+                image: '../assets/images/projectNaruto.png',
+                progress: "Creating",
+                link: "https://github.com/GabrielNonnemacher/Naruto-Characters",
+            },
+            {
+                name: "Project Naruto",
+                text: "The Naruto Project is a Front-End project, which uses Angular as technology. The project aims to study and enrich the portfolio.",
+                image: '../assets/images/projectNaruto.png',
+                progress: "Creating",
+                link: "https://github.com/GabrielNonnemacher/Naruto-Characters",
+            },
+            {
+                name: "Project Naruto",
+                text: "The Naruto Project is a Front-End project, which uses Angular as technology. The project aims to study and enrich the portfolio.",
+                image: '../assets/images/projectNaruto.png',
+                progress: "Creating",
+                link: "https://github.com/GabrielNonnemacher/Naruto-Characters",
+            },
+            {
+                name: "Project Naruto",
+                text: "The Naruto Project is a Front-End project, which uses Angular as technology. The project aims to study and enrich the portfolio.",
+                image: '../assets/images/projectNaruto.png',
+                progress: "Creating",
+                link: "https://github.com/GabrielNonnemacher/Naruto-Characters",
+            },
+            {
+                name: "Project Naruto",
+                text: "The Naruto Project is a Front-End project, which uses Angular as technology. The project aims to study and enrich the portfolio.",
+                image: '../assets/images/projectNaruto.png',
+                progress: "Creating",
+                link: "https://github.com/GabrielNonnemacher/Naruto-Characters",
+            },
+            {
+                name: "Project Naruto",
+                text: "The Naruto Project is a Front-End project, which uses Angular as technology. The project aims to study and enrich the portfolio.",
+                image: '../assets/images/projectNaruto.png',
+                progress: "Creating",
+                link: "https://github.com/GabrielNonnemacher/Naruto-Characters",
+            }
+        ]
     }
 };
