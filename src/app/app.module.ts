@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ButtonFooterComponent } from './components/button-footer/button-footer.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { BoxProjectsComponent } from './components/box-projects/box-projects.component';
+import { ImageSliderComponent } from './components/image-slider/image-slider.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BoxProjectsComponent } from './components/box-projects/box-projects.com
     FooterComponent,
     ButtonFooterComponent,
     ProjectsComponent,
-    BoxProjectsComponent
+    BoxProjectsComponent,
+    ImageSliderComponent
   ],
   imports: [
     BrowserModule,

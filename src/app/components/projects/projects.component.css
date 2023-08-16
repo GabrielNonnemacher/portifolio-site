@@ -36,20 +36,21 @@
 
 
 @media screen and (max-width: 1002px) {
-    .container-cards-projects  {
+    .container-cards-projects {
         width: 80%;
     }
 }
 
 @media screen and (max-width: 848px) {
-    .container-cards-projects  {
+    .container-cards-projects {
         width: 90%;
     }
 }
 
 @media screen and (max-width: 760px) {
-    .container-cards-projects  {
+    .container-cards-projects {
         width: 100%;
         justify-content: center;
     }
 }
+

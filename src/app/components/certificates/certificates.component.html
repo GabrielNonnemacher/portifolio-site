@@ -1,5 +1,5 @@
 <section id="Certificates"
-   class="body-certificates">
+         class="body-certificates">
     <div class="container-certificates">
         <h2 class="title-certificates .f-24">
             Certificates
@@ -8,7 +8,7 @@
                  alt="Medal icon">
         </h2>
 
-        <div class="container-images-certificates">
+        <!-- <div class="container-images-certificates">
             <div class="border-image"
                  *ngFor="let certificate of certificates">
                 <img class="a"
@@ -29,6 +29,10 @@
                     [disabled]="maxCertificatePage()">
                 <mat-icon>expand_more</mat-icon> More
             </button>
+        </div> -->
+
+        <div style="width: 500px; height: 200px; margin: 0 auto">
+            <image-slider [slides]="certificates"></image-slider>
         </div>
     </div>
 </section>

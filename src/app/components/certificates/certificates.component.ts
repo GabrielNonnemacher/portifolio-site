@@ -8,12 +8,15 @@ import { INFORMATIONS } from 'src/assets/helpers/Informations';
   styleUrls: ['./certificates.component.css']
 })
 export class CertificatesComponent implements OnInit, OnDestroy {
+  slides: any[] = new Array(3).fill({ id: -1, src: '', title: '', subtitle: '' });
+
   constructor() {}
 
-  certificatesPage = 2;
+  certificatesPage = 9;
   listCertificates = INFORMATIONS.Certificates;
   certificates: string[] = [] as string[];
   ngUnsubscribe = new Subject<void>();
+
 
   ngOnInit(): void {
     this.composeListCertificates();

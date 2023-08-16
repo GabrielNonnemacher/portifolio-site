@@ -4,6 +4,7 @@
     justify-content: center;
     color: aliceblue;
     background-color: var(--background-color-2);
+    height: 600px;
 }
 
 .container-certificates {
@@ -126,4 +127,23 @@
         width: 100%;
         height: 55vw;
     }
+}
+
+.box-certificates {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.item-box-certificate {
+    scroll-snap-align: center;
+    min-width: 80%;
+}
+
+.image-certificate {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
