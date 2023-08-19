@@ -8,7 +8,6 @@
 .container-projects {
     width: 100%;
     padding: 0 24px;
-    max-width: 1760px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -27,30 +26,16 @@
 }
 
 .container-cards-projects {
-    width: 100%;
+    width: 80%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 80px;
 }
 
-
-@media screen and (max-width: 1002px) {
-    .container-cards-projects {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 848px) {
-    .container-cards-projects {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 2240px) {
     .container-cards-projects {
         width: 100%;
-        justify-content: center;
     }
 }
-
