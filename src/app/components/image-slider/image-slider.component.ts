@@ -5,26 +5,11 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
   templateUrl: './image-slider.component.html',
   styleUrls: ['./image-slider.component.css']
 })
-export class ImageSliderComponent implements OnInit, OnDestroy {
+export class ImageSliderComponent implements OnDestroy {
   @Input() slides: string[] = [];
 
   currentIndex: number = 0;
   timeoutId?: number;
-
-  ngOnInit(): void {
-    console.log(this.slides);
-    
-    this.resetTimer();
-  }
-  ngOnDestroy() {
-    window.clearTimeout(this.timeoutId);
-  }
-  resetTimer() {
-    if (this.timeoutId) {
-      window.clearTimeout(this.timeoutId);
-    }
-    this.timeoutId = window.setTimeout(() => this.goToNext(), 4500);
-  }
 
   goToPrevious(): void {
     const isFirstSlide = this.currentIndex === 0;
@@ -32,24 +17,25 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
       ? this.slides.length - 1
       : this.currentIndex - 1;
 
-    this.resetTimer();
     this.currentIndex = newIndex;
   }
 
-  goToNext(): void {
+  public goToNext(): void {
     const isLastSlide = this.currentIndex === this.slides.length - 1;
     const newIndex = isLastSlide ? 0 : this.currentIndex + 1;
 
-    this.resetTimer();
     this.currentIndex = newIndex;
   }
 
-  goToSlide(slideIndex: number): void {
-    this.resetTimer();
+  public goToSlide(slideIndex: number): void {
     this.currentIndex = slideIndex;
   }
 
-  getCurrentSlideUrl() {
+  public getCurrentSlideUrl() {
     return `url('${this.slides[this.currentIndex]}')`;
+  }
+
+  public ngOnDestroy() {
+    window.clearTimeout(this.timeoutId);
   }
 }

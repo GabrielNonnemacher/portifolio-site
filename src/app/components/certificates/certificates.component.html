@@ -8,30 +8,7 @@
                  alt="Medal icon">
         </h2>
 
-        <!-- <div class="container-images-certificates">
-            <div class="border-image"
-                 *ngFor="let certificate of certificates">
-                <img class="a"
-                     src={{certificate}}
-                     alt="Certificate from Author">
-            </div>
-        </div>
-
-        <div class="plus-certificates">
-            <button class="button-less-more-certificates"
-                    (click)="lessCertificates()"
-                    [disabled]="minCertificatePage()">
-                <mat-icon>expand_less</mat-icon> Less
-            </button>
-
-            <button class="button-less-more-certificates"
-                    (click)="moreCertificates()"
-                    [disabled]="maxCertificatePage()">
-                <mat-icon>expand_more</mat-icon> More
-            </button>
-        </div> -->
-
-        <div style="width: 500px; height: 200px; margin: 0 auto">
+        <div class="container-slides">
             <image-slider [slides]="certificates"></image-slider>
         </div>
     </div>
