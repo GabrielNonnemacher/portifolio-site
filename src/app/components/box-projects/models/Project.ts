@@ -4,6 +4,7 @@ export interface Project {
     image: string;
     progress: string;
     link: string;
+    color: string;
 }
 
 export class ProjectDTO {
@@ -13,7 +14,8 @@ export class ProjectDTO {
             text: params.text,
             image: params.image,
             progress: params.progress,
-            link: params.link
+            link: params.link,
+            color: params.color
         } as Project;
     }
 }

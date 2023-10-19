@@ -35,3 +35,27 @@ body {
     font-weight: 500;
     font-family: var(--font-name);
 }
+
+.bg-green-1 {
+    background-color: rgb(162, 192, 134);
+}
+
+.bg-violet-1 {
+    background-color: rgb(167, 134, 192);
+}
+
+.bg-yellow-1 {
+    background-color: rgb(223, 191, 122);
+}
+
+.bg-blue-1 {
+    background-color: rgb(134, 185, 216);
+}
+
+.bg-red-1 {
+    background-color: rgb(225, 120, 120);
+}
+
+.bg-orange-1 {
+    background-color: rgb(235, 162, 113);
+}
