@@ -125,3 +125,26 @@
         height: 320px;
     }
 }
+
+@media screen and (max-width: 944px) {
+    .informations-block-footer {
+        flex-direction: column;
+        height: 504px;
+        max-width: 524px;
+    }
+
+    .container-text-infos-footer,
+    .container-social-networks-footer,
+    .container-contacts-footer {
+        width: 100%;
+    }
+
+    .container-text-infos-footer {
+        height: 80px;
+    }
+
+    .text-infos-footer {
+        width: 100%;
+        max-width: none;
+    }
+}
