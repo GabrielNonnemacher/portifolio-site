@@ -14,6 +14,7 @@ import { ButtonFooterComponent } from './components/button-footer/button-footer.
 import { ProjectsComponent } from './components/projects/projects.component';
 import { BoxProjectsComponent } from './components/box-projects/box-projects.component';
 import { ImageSliderComponent } from './components/image-slider/image-slider.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ImageSliderComponent } from './components/image-slider/image-slider.com
     ButtonFooterComponent,
     ProjectsComponent,
     BoxProjectsComponent,
-    ImageSliderComponent
+    ImageSliderComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
