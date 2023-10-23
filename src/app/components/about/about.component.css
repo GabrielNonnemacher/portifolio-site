@@ -1,0 +1,19 @@
+.body-about {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color-2);
+}
+
+.container-about {
+    width: 100%;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ab {
+    height: 444px;
+}
