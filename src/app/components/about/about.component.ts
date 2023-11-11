@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { INFORMATIONS } from 'src/assets/helpers/Informations';
 
 @Component({
   selector: 'About',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
-
+  text = INFORMATIONS.About;
 }

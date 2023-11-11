@@ -133,5 +133,10 @@ export const INFORMATIONS = {
                 link: "https://github.com/GabrielNonnemacher/calculator",
             }
         ]
+    },
+    About: {
+        Title: "About Me",
+        Text: "sdfjkjkjkjk dskkkkkkk sdkjsd sdkdjjsd ksdkdf dskkkkkkk sdkjsd sdkdjjsd ksdkdf dskkkkkkk sdkjsd sdkdjjsd ksdkdf dskkkkkkk sdkjsd sdkdjjsd ksdkdf dskkkkkkk sdkjsd sdkdjjsd ksdkdf dskkkkkkk sdkjsd sdkdjjsd ksdkdf dskkkkkkk sdkjsd sdkdjjsd ksdkdf v dskkkkkkk sdkjsd sdkdjjsd ksdkdf dskkkkkkk sdkjsd sdkdjjsd ksdkdf dskkkkkkk sdkjsd sdkdjjsd ksdkdf dskkkkkkk sdkjsd sdkdjjsd ksdkdf dskkkkkkk sdkjsd sdkdjjsd ksdkdf dskkkkkkk sdkjsd sdkdjjsd ksdkdf dskkkkkkk sdkjsd sdkdjjsd ksdkdfdskkkkkkk sdkjsd sdkdjjsd ksdkdfdskkkkkkk sdkjsd sdkdjjsd ksdkdf jkjk dskkkkkkk sdkjsd sdkdjjsd ksdkdf",
+        Image: ""
     }
 };

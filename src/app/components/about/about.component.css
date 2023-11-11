@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--font-color);
     background-color: var(--background-color-2);
 }
 
@@ -14,6 +15,13 @@
     flex-direction: column;
 }
 
-.ab {
-    height: 444px;
+.title-about {
+    height: 144px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--font-poppins);
 }
