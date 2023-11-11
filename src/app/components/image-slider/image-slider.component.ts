@@ -6,7 +6,7 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
   styleUrls: ['./image-slider.component.css']
 })
 export class ImageSliderComponent implements OnDestroy {
-  @Input() slides: string[] = [];
+  @Input() slides: string[] = [] as string[];
 
   currentIndex: number = 0;
   timeoutId?: number;
