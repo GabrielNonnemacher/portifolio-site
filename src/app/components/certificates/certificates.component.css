@@ -14,9 +14,24 @@
     align-items: center;
 }
 
+.medal-icon {
+    margin-left: 8px;
+    height: 48px;
+}
+
+.container-slides {
+    width: 65%;
+    min-width: 480px;
+    height: calc(35vw - 60px);
+    max-height: 750px;
+    padding: 0px 64px;
+    margin-bottom: 88px;
+    position: relative;
+}
+
 .title-certificates {
-    height: 144px;
-    width: 100%;
+    margin-top: 24px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,23 +40,8 @@
     font-family: var(--font-poppins);
 }
 
-.medal-icon {
-    margin-left: 8px;
-    height: 48px;
-}
-
-.container-slides {
-    width: 100%;
-    height: calc(50vw - 60px);
-    max-height: 750px;
-    padding: 0px 64px;
-    margin-bottom: 88px;
-    position: relative;
-}
-
-@media screen and (max-width: 880px) {
-    .title-certificates {
-        margin-top: 24px;
-        height: 80px;
+@media screen and (max-width: 856px) {
+    .container-slides {
+        min-height: 240px;
     }
 }
