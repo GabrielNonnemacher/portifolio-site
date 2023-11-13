@@ -1,4 +1,4 @@
-import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnDestroy, Output } from '@angular/core';
 
 @Component({
   selector: 'image-slider',
@@ -10,6 +10,7 @@ export class ImageSliderComponent implements OnDestroy {
 
   currentIndex: number = 0;
   timeoutId?: number;
+  @Output() onClick =  new EventEmitter();
 
   goToPrevious(): void {
     const isFirstSlide = this.currentIndex === 0;
@@ -31,11 +32,15 @@ export class ImageSliderComponent implements OnDestroy {
     this.currentIndex = slideIndex;
   }
 
-  public getCurrentSlideUrl() {
+  public getCurrentSlideUrl(): string {
     return `url('${this.slides[this.currentIndex]}')`;
   }
 
-  public ngOnDestroy() {
+  public onClickModal(): void {
+    this.onClick.emit(this.currentIndex);
+  }
+
+  public ngOnDestroy(): void {
     window.clearTimeout(this.timeoutId);
   }
 }

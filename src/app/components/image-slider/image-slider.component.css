@@ -5,6 +5,8 @@
     background-size: cover;
     background-position: center;
     transition: all 0.6s;
+    border: none;
+    cursor: pointer;
 }
 
 .rightArrow {

@@ -22,8 +22,8 @@
 .container-slides {
     width: 65%;
     min-width: 480px;
+    max-height: 440px;
     height: calc(35vw - 60px);
-    max-height: 750px;
     padding: 0px 64px;
     margin-bottom: 88px;
     position: relative;
