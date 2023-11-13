@@ -11,20 +11,21 @@
         </div>
     </div>
 
-    <div class="slide"
-         [ngStyle]="{ 'background-image': getCurrentSlideUrl() }">
-    </div>
+    <button class="slide"
+            (click)="onClickModal()"
+            [ngStyle]="{ 'background-image': getCurrentSlideUrl() }">
+    </button>
 
     <div class="dotsContainer">
         <div *ngFor="let slide of slides; let slideIndex = index"
              class="dot"
              (click)="goToSlide(slideIndex)">
             <div *ngIf="slideIndex !== currentIndex"
-                  class="no-select-spherical">
+                 class="no-select-spherical">
             </div>
 
             <div *ngIf="slideIndex === currentIndex"
-                  class="select-spherical">
+                 class="select-spherical">
             </div>
         </div>
     </div>

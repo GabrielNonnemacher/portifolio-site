@@ -8,12 +8,21 @@ import { INFORMATIONS } from 'src/assets/helpers/Informations';
   styleUrls: ['./certificates.component.css']
 })
 export class CertificatesComponent implements OnDestroy {
-  slides: any[] = new Array(3).fill({ id: -1, src: '', title: '', subtitle: '' });
-
   constructor() {}
-  
+  slides: any[] = new Array(3).fill({ id: -1, src: '', title: '', subtitle: '' });
   certificates = INFORMATIONS.Certificates;
+  imageModal: string = "";
+  openModal: boolean = false;
   ngUnsubscribe = new Subject<void>();
+
+  public onClick(index: number): void {
+    this.imageModal = this.certificates[index];
+    this.openModal = true;    
+  }
+
+  public setIsView(view: boolean): void {
+    this.openModal = view;
+  }
 
   public ngOnDestroy(): void {
     this.ngUnsubscribe.next();

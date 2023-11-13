@@ -15,6 +15,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { BoxProjectsComponent } from './components/box-projects/box-projects.component';
 import { ImageSliderComponent } from './components/image-slider/image-slider.component';
 import { AboutComponent } from './components/about/about.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AboutComponent } from './components/about/about.component';
     ProjectsComponent,
     BoxProjectsComponent,
     ImageSliderComponent,
-    AboutComponent
+    AboutComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

@@ -9,7 +9,14 @@
         </h2>
 
         <div class="container-slides">
-            <image-slider [slides]="certificates"></image-slider>
+            <image-slider [slides]="certificates"
+                          (onClick)="onClick($event)">
+            </image-slider>
         </div>
     </div>
 </section>
+
+<modal [isView]="openModal"
+       [image]="imageModal"
+       (returnIsView)="setIsView($event)">
+</modal>
