@@ -15,9 +15,13 @@
 }
 
 .title {
-    font-size: 32px;
+    font-size: 24px;
     font-family: var(--FONT-002);
     color: aliceblue;
+}
+
+.menu {
+    display: none;
 }
 
 ul {
@@ -50,7 +54,20 @@ a:hover {
 
 @media screen and (max-width: 1000px) {
     ul {
-        width: 90%;
-        width: 440px;
+        width: 384px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
     }
 }
