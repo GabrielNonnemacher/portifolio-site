@@ -1,86 +1,56 @@
-.body-header {
-    height: 64px;
+.body {
+    height: 80px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: var(--background-color);
+    background-color: var(--BACKGROUND-002);
+    border-bottom: 4px solid #4c046d;
+    box-shadow: 0px 6px 16px 0px rgba(95, 16, 131, 0.2);
 }
 
-.container-header {
+.container {
+    height: 100%;
     width: 80%;
-    max-width: 1160px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-
-.name-header,
-.name-header-simple {
-    height: 100%;
-    display: flex;
-    align-items: center;
+.title {
     font-size: 32px;
-    font-family: var(--font-name);
-    color: rgb(245, 245, 245);
-    background-color: var(--background-color);
+    font-family: var(--FONT-002);
+    color: aliceblue;
 }
 
-.name-header-simple {
-    display: none;
-}
-
-.container-buttons-header {
+ul {
     height: 100%;
-    width: 360px;
+    width: 480px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-.icon-menu {
-    display: none;
+li {
+    height: 80px;
+    list-style-type: none;
+    text-align: center;
 }
 
-.icon-menu:focus {
-    .line-center-icon-menu {
-        display: none;
-    }
+a {
+    font-family: var(--FONT-001);
+    font-size: 16px;
+    text-decoration: none;
+    color: aliceblue;
+    border-bottom: 4px solid #9c38cb00;
+    transition: all 0.6s;
 }
 
-.line-icon-menu{
-    width: 100%;
-    height: 5px;
-    border-radius: 8px;
-    background-color: rgb(245, 245, 245);
+a:hover {
+    border-bottom: 4px solid #6c12b1;
+    box-shadow: 0px 6px 16px 0px rgba(95, 16, 131, 0.2);
 }
 
-@media screen and (max-width: 872px) {
-    .name-header {
-        display: none;
-    }
-
-    .name-header-simple {
-        display: flex;
-    }
-}
-
-@media screen and (max-width: 648px) {
-    .container-header {
-        justify-content: space-between;
-    }
-
-    .container-buttons-header {
-        display: none;
-    }
-
-    .icon-menu {
-        height: 32px;
-        width: 32px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        cursor: pointer;
-        border: none;
-        background-color: var(--background-color);
+@media screen and (max-width: 1000px) {
+    ul {
+        width: 90%;
+        width: 440px;
     }
 }
