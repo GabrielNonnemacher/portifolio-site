@@ -7,8 +7,10 @@ import { Component, signal } from '@angular/core';
 })
 export class HeaderComponent {
   openSideBar = signal<boolean>(false);
+  firstEnter = signal<boolean>(true);
 
   public onClickMenu(): void {
     this.openSideBar.update(prop => !prop);
+    this.firstEnter.set(false);
   }
 }
