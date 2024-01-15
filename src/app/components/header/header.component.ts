@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'Header',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  openSideBar = signal<boolean>(false);
 
+  public onClickMenu(): void {
+    this.openSideBar.update(prop => !prop);
+  }
 }

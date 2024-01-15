@@ -5,7 +5,16 @@
             Gabriel Nonnemacher
         </div>
 
-        <div class="menu"></div>
+        <div class="menu"
+             (click)="onClickMenu()">
+            <img [ngClass]="{iconShow: !openSideBar(), iconHide: openSideBar()}"
+                 src="../../../assets/images/menuIcon.svg"
+                 alt="Button menu">
+
+            <img [ngClass]="{iconShow: openSideBar(), iconHide: !openSideBar()}"
+                 src="../../../assets/images/deleteIcon.svg"
+                 alt="Button menu">
+        </div>
 
         <nav>
             <ul>
