@@ -57,15 +57,18 @@ a {
     transition: all 0.6s;
 }
 
-a:hover {
-    border-bottom: 4px solid #6c12b1;
-    box-shadow: 0px 6px 16px 0px rgba(95, 16, 131, 0.2);
-}
-
 .iconShow,
 .iconHide {
     display: none;
 }
+
+@media screen and (min-width: 800px) {
+    a:hover {
+        border-bottom: 4px solid #6c12b1;
+        box-shadow: 0px 6px 16px 0px rgba(95, 16, 131, 0.2);
+    }
+}
+
 
 @media screen and (max-width: 1000px) {
 
@@ -122,17 +125,20 @@ a:hover {
     }
 
     li {
-        height: 64px;
+        height: 48px;
         width: 100%;
         margin-bottom: 16px;
+    }
+
+    li img {
+        max-height: 40px;
+        margin-right: 16px;
     }
 
     a {
         display: flex;
         align-items: center;
-        justify-content: center;
         height: 40px;
-        background-color: #6c12b1;
         width: 100%;
         border-radius: 8px;
         font-size: 18px;
@@ -143,7 +149,6 @@ a:hover {
 /* 
 SIDEBAR
 */
-
 .sidebar {
     position: fixed;
     top: 80px;
@@ -154,7 +159,7 @@ SIDEBAR
     transform: translateX(100%);
     animation: slideIn 0.4s ease-in-out forwards;
     color: white;
-    padding: 20px;
+    padding: 32px;
     box-shadow: 0px 6px 16px 0px rgba(95, 16, 131, 0.2);
 
 }
