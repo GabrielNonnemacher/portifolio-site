@@ -3,12 +3,16 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .container {
     height: 100%;
     width: 80%;
     display: flex;
+    position: absolute;
+    z-index: 1;
 }
 
 .about,
@@ -26,36 +30,30 @@
 }
 
 .about>h2 {
-    font-size: 64px;
-    line-height: 64px;
+    font-size: 72px;
+    line-height: 72px;
     font-weight: 600;
     font-family: var(--FONT-003);
-    margin: 8px 0 12px;
+    margin: 12px 0 24px;
 }
 
 .about>p:first-child {
     font-size: 40px;
     font-weight: 300;
-    font-family: var(--FONT-003);
+    font-family: var(--FONT-001);
 }
 
 .about>p:nth-child(3) {
     display: flex;
     flex-wrap: wrap;
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 18px;
     font-family: var(--FONT-003);
     margin-bottom: 24px;
 }
 
-.about>p:nth-child(n+4) {
-    font-size: 14px;
-    max-width: 580px;
-}
-
 .about>.button{
     margin-top: 24px;
-    width: 320px;
+    width: 280px;
 }
 
 .image {
@@ -64,6 +62,6 @@
     justify-content: flex-end;
 }
 
-img {
+div>img {
     max-width: 95%;
 }
