@@ -3,3 +3,16 @@
     width: 100%;
     background-color: var(--BACKGROUND-001);
 }
+
+.body::-webkit-scrollbar {
+    background-color: rgba(235, 235, 235, 0.083);
+    border-radius: 32px;
+    width: 8px;
+    margin-left: 4px;
+}
+
+.body::-webkit-scrollbar-thumb {
+    background-color: rgb(228, 48, 16);
+    border-radius: 32px;
+}
+

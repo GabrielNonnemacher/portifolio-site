@@ -7,7 +7,7 @@ button {
     font-size: 18px;
     position: relative;
     overflow: hidden;
-    background: #5e0a9e;
+    background: var(--COLOR-VIOLET-001);
     color: #ffffff;
     transition: background-color 0.5s;
     cursor: pointer;
@@ -49,5 +49,5 @@ button>div {
 }
 
 button>div:hover{
-    color: #5e0a9e;
+    color: var(--COLOR-VIOLET-001);
 }
