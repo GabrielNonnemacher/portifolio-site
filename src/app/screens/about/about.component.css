@@ -14,33 +14,35 @@
 .about,
 .image {
     height: 100%;
-    width: 50%;
     display: flex;
 }
 
 .about {
+    width: 65%;
     justify-content: center;
     flex-direction: column;
-    color: var(--FONT-COLOR-001);
+    color: var(--COLOR-001);
     font-family: var(--FONT-001);
 }
 
 .about>h2 {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 64px;
+    line-height: 64px;
     font-weight: 600;
     font-family: var(--FONT-003);
-    margin: 4px 0 8px;
+    margin: 8px 0 12px;
 }
 
 .about>p:first-child {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 300;
     font-family: var(--FONT-003);
 }
 
 .about>p:nth-child(3) {
-    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 24px;
     font-weight: 400;
     font-family: var(--FONT-003);
     margin-bottom: 24px;
@@ -48,14 +50,20 @@
 
 .about>p:nth-child(n+4) {
     font-size: 14px;
+    max-width: 580px;
 }
 
+.about>.button{
+    margin-top: 24px;
+    width: 320px;
+}
 
 .image {
+    width: 35%;
     align-items: center;
     justify-content: flex-end;
 }
 
 img {
-    height: 80%;
+    max-width: 95%;
 }

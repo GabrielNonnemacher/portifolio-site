@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { ComponentModule } from '../components/component.module';
 import { AboutComponent } from './about/about.component';
 
 
@@ -9,7 +10,8 @@ import { AboutComponent } from './about/about.component';
     AboutComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ComponentModule
   ],
   exports: [
     AboutComponent
