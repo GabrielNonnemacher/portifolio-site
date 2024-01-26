@@ -128,17 +128,18 @@ a {
         height: 48px;
         width: 100%;
         margin-bottom: 16px;
+        padding-left: 8px;
     }
 
     li img {
-        max-height: 40px;
+        max-height: 32px;
         margin-right: 16px;
     }
 
     a {
         display: flex;
         align-items: center;
-        height: 40px;
+        height: 48px;
         width: 100%;
         border-radius: 8px;
         font-size: 18px;
@@ -154,7 +155,7 @@ SIDEBAR
     top: 80px;
     right: 0px;
     height: calc(100vh - 80px);
-    width: 250px;
+    width: 260px;
     background-color: var(--BACKGROUND-002);
     transform: translateX(100%);
     animation: slideIn 0.4s ease-in-out forwards;
