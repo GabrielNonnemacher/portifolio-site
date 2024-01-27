@@ -7,90 +7,22 @@
 
         <div class="menu"
              (click)="onClickMenu()">
-            <img [ngClass]="{iconShow: !openSideBar(), iconHide: openSideBar()}"
+            <img [ngClass]="{iconShow: !openNavHeaderMobile(), iconHide: openNavHeaderMobile()}"
                  src="../../../assets/images/menuIcon.svg"
                  alt="Button menu">
 
-            <img [ngClass]="{iconShow: openSideBar(), iconHide: !openSideBar()}"
+            <img [ngClass]="{iconShow: openNavHeaderMobile(), iconHide: !openNavHeaderMobile()}"
                  src="../../../assets/images/deleteIcon.svg"
                  alt="Button menu">
         </div>
 
-        <nav>
-            <ul>
-                <li class="df-all-center">
-                    <a href="#about">
-                        Sobre Mim
-                    </a>
-                </li>
-
-                <li class="df-all-center">
-                    <a href="#">
-                        Projetos
-                    </a>
-                </li>
-
-                <li class="df-all-center">
-                    <a href="#">
-                        Habilidades
-                    </a>
-                </li>
-
-                <li class="df-all-center">
-                    <a href="#">
-                        Contatos
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <NavHeaderDesktop class="navDesktop"
+                          [items]="buttonsHeader()">
+        </NavHeaderDesktop>
     </div>
 </header>
 
-<div class="sidebar"
-     [ngClass]="{sidebarFechada: !openSideBar(), firstEnter: firstEnter()}">
-    <div class="title-2">
-        Gabriel Nonnemacher
-    </div>
-
-    <div class="line"></div>
-
-    <nav>
-        <ul>
-            <li class="df-all-center">
-                <a href="#">
-                    <img src="../../../assets/images/user.svg"
-                         alt="Button menu">
-
-                    Sobre Mim
-                </a>
-            </li>
-
-            <li class="df-all-center">
-                <a href="#">
-                    <img src="../../../assets/images/projects.svg"
-                         alt="Button menu">
-
-                    Projetos
-                </a>
-            </li>
-
-            <li class="df-all-center">
-                <a href="#">
-                    <img src="../../../assets/images/skills.svg"
-                         alt="Button menu">
-
-                    Habilidades
-                </a>
-            </li>
-
-            <li class="df-all-center">
-                <a href="#">
-                    <img src="../../../assets/images/contacts.svg"
-                         alt="Button menu">
-
-                    Contatos
-                </a>
-            </li>
-        </ul>
-    </nav>
-</div>
+<NavHeaderMobile [openNavHeaderMobile]="openNavHeaderMobile()"
+                 [firstEnter]="firstEnter()"
+                 [items]="buttonsHeader()">
+</NavHeaderMobile>

@@ -1,0 +1,11 @@
+<nav>
+    <ul>
+        <li *ngFor="let item of items"
+            class="df-all-center"
+            (click)="scrollToSection(item.id)">
+            <div>
+                {{item.text}}
+            </div>
+        </li>
+    </ul>
+</nav>

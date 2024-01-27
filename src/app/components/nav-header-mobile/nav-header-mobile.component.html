@@ -1,0 +1,22 @@
+<div class="sidebar"
+     [ngClass]="{sidebarFechada: !openNavHeaderMobile, firstEnter: firstEnter}">
+    <div class="title-2">
+        Gabriel Nonnemacher
+    </div>
+
+    <div class="line"></div>
+
+    <nav>
+        <ul>
+            <li class="df-all-center"
+                *ngFor="let item of items">
+                <div>
+                    <img src="{{item.urlImage}}"
+                         alt="Button menu">
+
+                    {{item.text}}
+                </div>
+            </li>
+        </ul>
+    </nav>
+</div>

@@ -1,15 +1,19 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header/header.component';
+import { NgModule } from '@angular/core';
 import { ButtonsModule } from './buttons/buttons.module';
-import { MainButtonComponent } from './buttons/main-button/main-button.component';
+import { HeaderComponent } from './header/header.component';
+import { NavHeaderDesktopComponent } from './nav-header-desktop/nav-header-desktop.component';
+import { NavHeaderMobileComponent } from './nav-header-mobile/nav-header-mobile.component';
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    NavHeaderDesktopComponent,
+    NavHeaderMobileComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ButtonsModule
   ],
   exports: [
     HeaderComponent,

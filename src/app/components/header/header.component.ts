@@ -1,4 +1,6 @@
-import { Component, signal } from '@angular/core';
+import { Component, Input, signal } from '@angular/core';
+import { HEADER_BUTTONS_CONTENT } from 'src/app/helpers/constatants/headerButtonsContent.constant';
+import { HeaderButton } from 'src/app/helpers/models/headerButton.model';
 
 @Component({
   selector: 'Header',
@@ -6,11 +8,12 @@ import { Component, signal } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  openSideBar = signal<boolean>(false);
+  openNavHeaderMobile = signal<boolean>(false);
   firstEnter = signal<boolean>(true);
+  buttonsHeader = signal<HeaderButton[]>(HEADER_BUTTONS_CONTENT);
 
   public onClickMenu(): void {
-    this.openSideBar.update(prop => !prop);
+    this.openNavHeaderMobile.update(prop => !prop);
     this.firstEnter.set(false);
   }
 }
