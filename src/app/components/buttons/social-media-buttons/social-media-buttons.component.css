@@ -1,0 +1,24 @@
+button {
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #4f4f4f70;
+    border: none;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+button:hover {
+    background-color: var(--COLOR-VIOLET-001);
+}
+
+img {
+    height: 30px;
+}
+
+#buttonX {
+    height: 24px;
+}

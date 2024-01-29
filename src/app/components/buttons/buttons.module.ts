@@ -1,16 +1,19 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { MainButtonComponent } from './main-button/main-button.component';
+import { SocialMediaButtonsComponent } from './social-media-buttons/social-media-buttons.component';
 
 @NgModule({
   declarations: [
-    MainButtonComponent
+    MainButtonComponent,
+    SocialMediaButtonsComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    MainButtonComponent
+    MainButtonComponent,
+    SocialMediaButtonsComponent
   ]
 })
-export class ButtonsModule { }
+export class ButtonsModule {}

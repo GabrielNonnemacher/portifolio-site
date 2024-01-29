@@ -1,10 +1,10 @@
 <section class="body">
     <div class="container">
-        <div class="about">
+        <div class="home">
             <p>Eu sou</p>
 
             <h2>
-                Gabriel Nonnemacher
+                Gabriel <br /> Nonnemacher
             </h2>
 
             <p>
@@ -13,8 +13,12 @@
             </p>
 
             <div class="button">
-                <MainButton></MainButton>
+                <MainButton (onClick)="scrollToAbout()"></MainButton>
             </div>
+
+            <SocialMediaButtons class="container-buttons-contacts"
+                                [items]="socialMedias()">
+            </SocialMediaButtons>
         </div>
 
         <div class="image">

@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { ButtonsModule } from '../components/buttons/buttons.module';
 import { ComponentModule } from '../components/component.module';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';

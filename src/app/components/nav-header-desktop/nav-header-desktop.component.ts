@@ -10,8 +10,6 @@ export class NavHeaderDesktopComponent {
   @Input() items: HeaderButton[] = [] as HeaderButton[];
 
   public scrollToSection(id: string): void {
-    console.log(id);
-    
     document.getElementById(id)?.scrollIntoView({behavior: "smooth"});
   }
 }

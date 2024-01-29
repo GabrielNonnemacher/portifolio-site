@@ -1,0 +1,8 @@
+<div *ngFor="let item of items">
+    <button title="{{item.text}}"
+            (click)="redirectTo(item.urlRedirect)">
+        <img id="{{item.id}}"
+             src="{{item.urlImage}}"
+             alt="{{item.text}}">
+    </button>
+</div>
