@@ -10,3 +10,13 @@
     width: 80%;
     display: flex;
 }
+
+.side-left {
+    height: 100%;
+    width: 40%;
+}
+
+.side-right {
+    height: 100%;
+    width: 60%;
+}

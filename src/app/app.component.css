@@ -1,5 +1,5 @@
 .body {
-    height: 100vh;
+    height: 200vh;
     width: 100%;
     background-color: var(--BACKGROUND-001);
 }
@@ -15,4 +15,3 @@
     background-color: rgb(228, 48, 16);
     border-radius: 32px;
 }
-
