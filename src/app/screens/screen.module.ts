@@ -4,13 +4,17 @@ import { ButtonsModule } from '../components/buttons/buttons.module';
 import { ComponentModule } from '../components/component.module';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
-
-
+import { ProjectsComponent } from './projects/projects.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    ProjectsComponent,
+    ContactsComponent,
+    SkillsComponent
   ],
   imports: [
     CommonModule,
@@ -18,7 +22,10 @@ import { HomeComponent } from './home/home.component';
   ],
   exports: [
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    ProjectsComponent,
+    ContactsComponent,
+    SkillsComponent
   ]
 })
 export class ScreenModule {}

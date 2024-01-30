@@ -4,12 +4,14 @@ import { ButtonsModule } from './buttons/buttons.module';
 import { HeaderComponent } from './header/header.component';
 import { NavHeaderDesktopComponent } from './nav-header-desktop/nav-header-desktop.component';
 import { NavHeaderMobileComponent } from './nav-header-mobile/nav-header-mobile.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     NavHeaderDesktopComponent,
-    NavHeaderMobileComponent
+    NavHeaderMobileComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,8 @@ import { NavHeaderMobileComponent } from './nav-header-mobile/nav-header-mobile.
   ],
   exports: [
     HeaderComponent,
-    ButtonsModule
+    ButtonsModule,
+    FooterComponent
   ]
 })
 export class ComponentModule {}

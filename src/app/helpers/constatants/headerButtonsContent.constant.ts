@@ -7,14 +7,14 @@ export const HEADER_BUTTONS_CONTENT: HeaderButton[] = [
         urlImage: '../../assets/images/user.svg'
     },
     {
-        id: 'projects',
-        text: 'Projetos',
-        urlImage: '../../assets/images/projects.svg'
-    },
-    {
         id: 'skills',
         text: 'Habilidades',
         urlImage: '../../assets/images/skills.svg'
+    },
+    {
+        id: 'projects',
+        text: 'Projetos',
+        urlImage: '../../assets/images/projects.svg'
     },
     {
         id: 'contacts',
