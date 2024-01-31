@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
 :root {
     --BACKGROUND-001: #170f22;
@@ -9,8 +10,10 @@
     --FONT-001: 'Poppins', sans-serif;
     --FONT-002: 'Satisfy', cursive;
     --FONT-003: 'Noto Sans', sans-serif;
+    --FONT-004: 'Bree Serif', serif;
     --COLOR-001: #FFFFFF;
-    --COLOR-VIOLET-001: #5e0a9e;
+    --COLOR-VIOLET-001: #5a2eb0;
+    --COLOR-VIOLET-002: #58259c;
 }
 
 * {
@@ -24,7 +27,7 @@
 .line {
     width: 100% !important;
     height: 2px !important;
-    background: linear-gradient(90deg, rgba(76, 4, 109, 0.00) -0.01%, #4C046D 48.96%, rgba(76, 4, 109, 0.00) 97.57%);
+    background: linear-gradient(90deg, rgba(76, 4, 109, 0.00) -0.01%, #58259c 48.96%, rgba(76, 4, 109, 0.00) 97.57%);
 }
 
 .df-all-center {
