@@ -1,6 +1,13 @@
 <section class="body"
          id="skills">
     <div class="container">
-        
+        <div class="header">
+
+        </div>
+        <div  class="content">
+            <CardSkill *ngFor="let skill of skills()"
+                       [item]="skill">
+            </CardSkill>
+        </div>
     </div>
 </section>

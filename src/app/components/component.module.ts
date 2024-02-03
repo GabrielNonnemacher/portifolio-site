@@ -5,13 +5,15 @@ import { HeaderComponent } from './header/header.component';
 import { NavHeaderDesktopComponent } from './nav-header-desktop/nav-header-desktop.component';
 import { NavHeaderMobileComponent } from './nav-header-mobile/nav-header-mobile.component';
 import { FooterComponent } from './footer/footer.component';
+import { CardSkillComponent } from './card-skill/card-skill.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     NavHeaderDesktopComponent,
     NavHeaderMobileComponent,
-    FooterComponent
+    FooterComponent,
+    CardSkillComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
   exports: [
     HeaderComponent,
     ButtonsModule,
-    FooterComponent
+    FooterComponent,
+    CardSkillComponent
   ]
 })
 export class ComponentModule {}
