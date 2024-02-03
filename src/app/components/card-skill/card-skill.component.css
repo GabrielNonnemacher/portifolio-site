@@ -1,10 +1,13 @@
 .body {
     width: 264px;
-    height: 304px;
+    height: 336px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    transition: all 0.6s;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 4px 0px rgba(95, 16, 131, 0.05);
 }
 
 .container {
@@ -17,12 +20,13 @@
 }
 
 img {
-    color: var(--COLOR-001);
+    font-family: var(--FONT-001);
     text-align: center;
     height: 30%;
 }
 
 h3 {
+    font-family: var(--FONT-001);
     color: var(--COLOR-001);
     text-align: center;
     height: 20%;
@@ -30,7 +34,13 @@ h3 {
 }
 
 p {
-    color: var(--COLOR-001);
+    font-family: var(--FONT-001);
+    color: var(--COLOR-002);
     text-align: center;
     height: 40%;
+    font-size: 14px;
+}
+
+.body:hover {
+    background-color: #592eb05d;
 }

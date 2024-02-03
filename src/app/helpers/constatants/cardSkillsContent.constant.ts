@@ -9,7 +9,7 @@ export const SKILLS: Skill[] = [
     },
     {
         title: "Desenvolvimento",
-        text: "Elaboração de soluções com design responsivo, visando proporcionar uma experiência otimizada em diferentes dispositivos.",
+        text: "Elaboração de soluções para diversos tipos de problemas com design responsivo, visando proporcionar uma experiência otimizada em diferentes dispositivos.",
         imageUrl: "../../assets/images/coding.svg",
         imageAlt: ""
     },
