@@ -1,5 +1,5 @@
 .body {
-    width: 264px;
+    width: 288px;
     height: 336px;
     display: flex;
     align-items: center;
@@ -42,5 +42,5 @@ p {
 }
 
 .body:hover {
-    background-color: #592eb05d;
+    background-color: #592eb02e;
 }
