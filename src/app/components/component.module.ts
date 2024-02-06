@@ -1,14 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ButtonsModule } from './buttons/buttons.module';
+import { CardSkillComponent } from './card-skill/card-skill.component';
+import { FooterComponent } from './footer/footer.component';
+import { FormContactComponent } from './form-contact/form-contact.component';
 import { HeaderComponent } from './header/header.component';
+import { TextComponent } from './inputs/text/text.component';
 import { NavHeaderDesktopComponent } from './nav-header-desktop/nav-header-desktop.component';
 import { NavHeaderMobileComponent } from './nav-header-mobile/nav-header-mobile.component';
-import { FooterComponent } from './footer/footer.component';
-import { CardSkillComponent } from './card-skill/card-skill.component';
-import { FormContactComponent } from './form-contact/form-contact.component';
-import { TextareaComponent } from './inputs/textarea/textarea.component';
-import { TextComponent } from './inputs/text/text.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +17,6 @@ import { TextComponent } from './inputs/text/text.component';
     FooterComponent,
     CardSkillComponent,
     FormContactComponent,
-    TextareaComponent,
     TextComponent
   ],
   imports: [
