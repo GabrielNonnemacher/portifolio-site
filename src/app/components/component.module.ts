@@ -6,6 +6,9 @@ import { NavHeaderDesktopComponent } from './nav-header-desktop/nav-header-deskt
 import { NavHeaderMobileComponent } from './nav-header-mobile/nav-header-mobile.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardSkillComponent } from './card-skill/card-skill.component';
+import { FormContactComponent } from './form-contact/form-contact.component';
+import { TextareaComponent } from './inputs/textarea/textarea.component';
+import { TextComponent } from './inputs/text/text.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,10 @@ import { CardSkillComponent } from './card-skill/card-skill.component';
     NavHeaderDesktopComponent,
     NavHeaderMobileComponent,
     FooterComponent,
-    CardSkillComponent
+    CardSkillComponent,
+    FormContactComponent,
+    TextareaComponent,
+    TextComponent
   ],
   imports: [
     CommonModule,
