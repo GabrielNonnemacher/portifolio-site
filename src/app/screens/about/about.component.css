@@ -9,6 +9,8 @@
     height: 100%;
     width: 80%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -35,7 +37,6 @@ img {
     color: var(--COLOR-001);
     font-size: 1rem;
     font-family: var(--FONT-001);
-
 }
 
 .header>p {
@@ -46,14 +47,16 @@ img {
 .header>h2 {
     height: 72px;
     margin: 0;
-    padding: 0; 
+    padding: 0;
     font-size: 48px;
     font-family: var(--FONT-001);
     color: var(--COLOR-001);
-    line-height: 56px;
+    line-height: 48px;
+    text-decoration: 4px solid var(--COLOR-VIOLET-001);
 }
 
 .text {
+    margin-top: 16px;
     font-weight: 400;
     font-size: 14px;
 }

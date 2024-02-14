@@ -4,10 +4,13 @@
         <div class="header">
             <p>Habilidades</p>
 
-            <h2>Minhas Habilidades</h2>
+            <h2>
+                Minhas Habilidades
+                <div class="title-border minw-100"></div>
+            </h2>
         </div>
 
-        <div  class="content">
+        <div class="content">
             <CardSkill *ngFor="let skill of skills()"
                        [item]="skill">
             </CardSkill>

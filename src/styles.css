@@ -37,6 +37,20 @@
     justify-content: center;
 }
 
+.title-border {
+    margin-top: 4px;
+    height: 6px;
+    background-color: var(--COLOR-VIOLET-001);
+}
+
+.minw-100 {
+    width: 100%;
+}
+
+.w-268px {
+    width: 268px;
+}
+
 ::-webkit-scrollbar {
     width: 12px;
 }
