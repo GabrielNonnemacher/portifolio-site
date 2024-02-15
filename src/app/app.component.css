@@ -1,7 +1,6 @@
 .body {
     height: calc(500vh + 360px);
     width: 100%;
-    background-color: var(--BACKGROUND-001);
 }
 
 .body::-webkit-scrollbar {

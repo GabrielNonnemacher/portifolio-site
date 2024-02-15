@@ -6,8 +6,9 @@
     justify-content: center;
     border-radius: 16px;
     transition: all 0.6s;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0px 0px 4px 0px rgba(95, 16, 131, 0.05);
+    margin: 16px;
 }
 
 .container {
@@ -42,5 +43,5 @@ p {
 }
 
 .body:hover {
-    background-color: #592eb02e;
+    background-color: var(--COLOR-VIOLET-002);
 }

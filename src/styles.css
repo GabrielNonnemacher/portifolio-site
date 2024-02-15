@@ -3,16 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
-:root {
-    --BACKGROUND-001: #170f22;
-    --BACKGROUND-002: #130D1C;
-    --BACKGROUND-003: #0e0914;
+:root {   
+    --BACKGROUND-001: #100b16;
+    --BACKGROUND-002: #100b16;
+    --BACKGROUND-003: #0c0c0c;
     --FONT-001: 'Poppins', sans-serif;
     --FONT-002: 'Satisfy', cursive;
     --FONT-003: 'Noto Sans', sans-serif;
     --FONT-004: 'Bree Serif', serif;
     --COLOR-001: #FFFFFF;
-    --COLOR-002: #d4d4d4;
+    --COLOR-002: #c8c8c8;
     --COLOR-VIOLET-001: #5a2eb0;
     --COLOR-VIOLET-002: #58259c;
 }
