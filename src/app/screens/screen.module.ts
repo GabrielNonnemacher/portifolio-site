@@ -1,12 +1,11 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { ButtonsModule } from '../components/buttons/buttons.module';
 import { ComponentModule } from '../components/component.module';
 import { AboutComponent } from './about/about.component';
+import { ContactsComponent } from './contacts/contacts.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { ContactsComponent } from './contacts/contacts.component';
 import { SkillsComponent } from './skills/skills.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -16,7 +15,7 @@ import { SkillsComponent } from './skills/skills.component';
     ContactsComponent,
     SkillsComponent
   ],
-  imports: [
+  imports: [ 
     CommonModule,
     ComponentModule
   ],

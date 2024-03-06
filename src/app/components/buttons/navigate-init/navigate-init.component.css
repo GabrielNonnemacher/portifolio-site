@@ -1,0 +1,22 @@
+button {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: var(--COLOR-VIOLET-001);
+    transition: all 0.4s;
+}
+
+button:hover {
+    width: 60px;
+    height: 60px;
+    background-color: var(--COLOR-VIOLET-002);
+}
+
+img {
+    width: 24px;
+}

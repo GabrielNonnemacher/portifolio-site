@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { TextComponent } from './inputs/text/text.component';
 import { NavHeaderDesktopComponent } from './nav-header-desktop/nav-header-desktop.component';
 import { NavHeaderMobileComponent } from './nav-header-mobile/nav-header-mobile.component';
+import { AppModule } from '../app.module';
 
 @NgModule({
   declarations: [

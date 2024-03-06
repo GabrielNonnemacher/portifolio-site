@@ -1,6 +1,7 @@
 .body {
     height: calc(500vh + 360px);
     width: 100%;
+    position: relative;
 }
 
 .body::-webkit-scrollbar {

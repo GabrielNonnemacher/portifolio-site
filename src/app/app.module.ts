@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ComponentModule } from './components/component.module';
 import { ScreenModule } from './screens/screen.module';
+import { ComponentModule } from './components/component.module';
 
 @NgModule({
   declarations: [
@@ -14,8 +14,8 @@ import { ScreenModule } from './screens/screen.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ComponentModule,
     ScreenModule,
+    ComponentModule,
     BrowserAnimationsModule
   ],
   providers: [],
