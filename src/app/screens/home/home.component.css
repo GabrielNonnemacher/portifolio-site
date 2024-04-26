@@ -1,12 +1,12 @@
 .body {
-    height: 100vh;
+    height: 680px;
     width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
 }
 
-.ig {
+.bg-image {
     object-fit: cover;
     position: fixed;
     z-index: -2;
@@ -15,7 +15,7 @@
     filter: blur(8px);
 }
 
-.igg {
+.image-filter {
     position: fixed;
     z-index: -1;
     width: 100%;
@@ -26,6 +26,7 @@
 .container {
     height: 100%;
     width: 80%;
+    max-width: 1280px;
     padding-top: 82px;
     display: flex;
 }
@@ -45,15 +46,15 @@
 }
 
 .home>h2 {
-    font-size: 56px;
-    line-height: 56px;
-    font-weight: 500;
-    font-family: var(--FONT-002);
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 600;
+    font-family: var(--FONT-001);
     margin: 24px 0 24px;
 }
 
 p {
-    max-width: 90%;
+    max-width: 40%;
     font-size: 16px;
     font-family: var(--FONT-001);
     color: var(--COLOR-002);

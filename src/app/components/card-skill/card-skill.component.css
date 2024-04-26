@@ -45,3 +45,25 @@ p {
 .body:hover {
     background-color: var(--COLOR-VIOLET-002);
 }
+
+@media (min-width: 1080px) {
+    .body {
+        width: 400px;
+        height: 264px;
+    }
+
+    p {
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 800px) {
+    .body {
+        width: 400px;
+        height: 264px;
+    }
+
+    p {
+        margin-top: 8px;
+    }
+}
