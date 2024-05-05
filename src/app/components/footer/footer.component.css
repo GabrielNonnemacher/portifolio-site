@@ -1,5 +1,34 @@
 footer {
     width: 100%;
     height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--BACKGROUND-003);
+}
+
+.container {
+    height: 100%;
+    width: 80%;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.side-left,
+.side-right {
+    width: 50%;
+    height: 70%;
+    background-color: blue;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    height: 24px;
+    font-size: 14px;
+    font-family: var(--FONT-001);
+    color: var(--COLOR-001);
 }
