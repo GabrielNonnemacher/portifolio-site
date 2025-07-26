@@ -1,0 +1,12 @@
+.button-social-media {
+    margin: 8px;
+  .button-social-media-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .image-social-media {
+      width: 20px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+#tools {
+  padding: 80px 0 0;
+}
+
+.tools {
+  .description {
+    margin: 24px 0 16px;
+    min-height: 80px;
+    font-size: var(--font-sz-md);
+    color: var(--font-color-default);
+    font-weight: var(--font-wgt);
+    font-family: var(--font-style-2);
+  }
+}
+
+.container-carousel {
+  height: 200px;
+  padding: 24px 0;
+  margin: 0 0 32px;
+}

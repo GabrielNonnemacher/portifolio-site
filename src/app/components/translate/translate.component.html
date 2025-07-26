@@ -1,0 +1,15 @@
+<button mat-mini-fab
+        color="primary"
+        [matMenuTriggerFor]="menu"
+        aria-label="Example icon button with a delete icon">
+    <mat-icon>translate</mat-icon>
+</button>
+
+<mat-menu #menu="matMenu">
+    @for (language of listLanguages(); track language.id) {
+    <button mat-menu-item
+            (click)="onClick(language.id)">
+        <span>{{language.text}}</span>
+    </button>
+    }
+</mat-menu>

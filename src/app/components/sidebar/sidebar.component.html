@@ -1,0 +1,17 @@
+<div class="sidebar" [ngClass]="open() ? 'open' : 'closed'">
+  <div class="container-sidebar">
+    <div class="header">
+      <lp-theme-mode class="theme-mode" />
+
+      <div class="title-sidebar">Guia de Navegação</div>
+    </div>
+
+    @for (link of listLinks(); track link.description) {
+    <lp-link-button [informationLink]="link" (clicked)="toggle()" />
+    }
+  </div>
+
+  <div class="container-sidebar">
+    <div class="footer">Desenvolvido por Gabriel Nonnemacher</div>
+  </div>
+</div>

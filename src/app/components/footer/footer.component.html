@@ -1,0 +1,50 @@
+<footer class="container">
+  <div class="content-container container-footer">
+    <div class="box-footer">
+      <div class="title-footer with-margin">Guia de Naveção</div>
+
+      <div class="informations">
+        @for (link of listLinks(); track link.description) {
+        <lp-link-button class="link-section" [informationLink]="link">
+        </lp-link-button>
+        }
+      </div>
+    </div>
+
+    <div class="box-footer">
+      <div class="title-footer">Entrar em contato por</div>
+
+      <div class="informations">
+        @for (contact of contacts(); track $index) {
+        <a href="{{ contact.link }}" target="_blank">
+          <div class="contact">
+            <img src="{{ contact.imageURL }}" alt="" />
+            <div class="link-contact">
+              {{ contact.title }}
+            </div>
+          </div>
+        </a>
+        }
+
+        <div class="social-medias">
+          @for (socialMedia of socialMedias(); track $index) {
+          <lp-social-media-link
+            [imageURL]="socialMedia.imageURL"
+            [title]="socialMedia.title"
+            [link]="socialMedia.link"
+          >
+          </lp-social-media-link>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="last-box-footer">
+    <div class="copyright">
+      © 2025 Gabriel Nonnemacher. Todos os direitos reservados.
+    </div>
+
+    <div>Desenvolvido por Gabriel Nonnemacher</div>
+  </div>
+</footer>

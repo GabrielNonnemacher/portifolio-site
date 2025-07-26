@@ -1,0 +1,39 @@
+.carousel-container {
+  padding: 20px 0;
+  height: 120px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll-infinite 60s linear infinite;
+}
+
+.icon-container {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 80px;
+  margin-right: 120px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+@keyframes scroll-infinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-5600px);
+  }
+}

@@ -1,0 +1,10 @@
+<button mat-mini-fab
+        [color]="'accent'"
+        (click)="onClick()"
+        aria-label="Example mini fab with a heart icon">
+    @if (themeMode() === isLightMode) {
+    <mat-icon class="content-animation">dark_mode</mat-icon>
+    } @else {
+    <mat-icon class="content-animation">light_mode</mat-icon>
+    }
+</button>

@@ -1,0 +1,165 @@
+.skills {
+  min-height: 600px;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-theme);
+
+  .title {
+    width: 100%;
+    padding: 16px 0;
+    margin-bottom: 40px;
+    text-align: center;
+    color: var(--white);
+    font-family: var(--font-style-1);
+    font-size: var(--font-sz-xlg);
+  }
+
+  .content-cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 30%;
+    min-width: 320px;
+    min-height: 320px;
+    background-color: var(--bg-card);
+    box-shadow: var(--box-shadow-3);
+    border-radius: 16px;
+    justify-content: center;
+    transition: opacity 2s ease;
+    position: relative;
+    cursor: pointer;
+
+    .title {
+      opacity: 1;
+      position: absolute;
+      top: 16px;
+      left: 0px;
+      width: 30%;
+      min-width: 320px;
+      margin: 16px 0;
+      color: var(--white);
+      font-family: var(--font-style-1);
+      font-size: var(--font-sz-xlg);
+    }
+
+    .image {
+      opacity: 1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 16px 0;
+      img {
+        max-height: 104px;
+      }
+      transition: opacity 2s ease;
+    }
+
+    .description {
+      opacity: 0;
+      display: none;
+      transition: opacity 2s ease;
+    }
+  }
+
+  .card-clicked,
+  .card:hover {
+    background-color: var(--bg-theme-light-2);
+    position: relative;
+
+    .description {
+      opacity: 1;
+      display: block;
+      position: absolute;
+      width: 80%;
+      margin: 16px 0;
+      font-size: var(--font-sz-md);
+      font-family: var(--font-style-2);
+      color: var(--white);
+      transition: opacity 2s ease;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .image {
+      opacity: 0;
+      display: none;
+      transition: opacity 2s ease;
+      filter: blur(1px);
+    }
+  }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1280px) {
+  .skills {
+    .card {
+      max-width: 256px;
+      min-width: 256px;
+      min-height: 304px;
+
+      .title {
+        top: 0px;
+        min-width: 256px;
+        font-size: var(--font-sz-md);
+      }
+
+      .image {
+        margin: 0 0 8px;
+        img {
+          height: 88px;
+        }
+      }
+
+      .description {
+        margin: 0;
+        margin: 16px 0;
+        height: 176px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .skills {
+    .content-container {
+      max-width: 100% !important;
+      width: 90% !important;
+    }
+    .content-cards {
+      flex-direction: column;
+      gap: 16px;
+      padding: 24px 0 80px;
+    }
+
+    .title {
+      margin: 24px 0 0;
+    }
+
+    .card {
+      max-width: 320px;
+      min-width: 320px;
+      min-height: 240px;
+
+      .title {
+        top: 0px;
+        min-width: 320px;
+        font-size: var(--font-sz-md);
+      }
+
+      .image {
+        bottom: 40px;
+        margin: 0 0 8px;
+        img {
+          height: 88px;
+        }
+      }
+    }
+  }
+}

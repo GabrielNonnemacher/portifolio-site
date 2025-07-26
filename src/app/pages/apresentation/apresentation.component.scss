@@ -1,0 +1,118 @@
+.apresentation {
+  width: 100%;
+  margin-top: 80px;
+  height: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: var(--bg-deg);
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 0) 98%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5) 70%,
+    rgba(0, 0, 0, 0) 98%
+  );
+}
+
+.front-apresentation {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-apresentation {
+  width: 50%;
+  color: var(--font-color-default);
+  font-weight: var(--font-wgt);
+
+  .congratulation-apresentation {
+    font-family: var(--font-style-2);
+    font-size: var(--font-sz-title-sm);
+  }
+
+  h1 {
+    font-size: var(--font-sz-title-md);
+    font-family: var(--font-style-1);
+    font-weight: 700;
+    margin: 16px 0;
+    text-shadow: var(--text-shadow);
+  }
+
+  .apresentation-apresentation {
+    max-width: 360px;
+    font-size: var(--font-sz-lg);
+    font-family: var(--font-style-2);
+  }
+}
+
+.image-author {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    border-radius: 50%;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .apresentation {
+    height: 560px;
+  }
+
+  .image-author {
+    img {
+      max-width: 240px;
+    }
+  }
+
+  .text-apresentation {
+    .congratulation-apresentation {
+      font-size: var(--font-sz-xlg);
+    }
+
+    h1 {
+      font-size: var(--font-sz-title-sm);
+    }
+
+    .apresentation-apresentation {
+      max-width: 320px;
+      font-size: var(--font-sz-md);
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .front-apresentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .text-apresentation {
+    width: 100%;
+    margin-bottom: 32px;
+
+    .apresentation-apresentation {
+      max-width: 100%;
+    }
+  }
+
+  .image-author {
+    img {
+      max-width: 200px;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.about {
+  width: 100%;
+  min-height: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 88px 0;
+  font-size: var(--font-sz-md);
+  color: var(--font-color-default);
+  font-weight: var(--font-wgt);
+  font-family: var(--font-style-2);
+  background: var(--bg-body);
+
+  .title {
+    margin-bottom: 24px;
+  }
+
+  .about-box-text {
+    display: flex;
+    justify-content: space-between;
+
+    .about-text {
+      margin: 24px 0;
+      width: 48%;
+    }
+  }
+
+  .contact-me-linkedin {
+    width: 100%;
+    padding: 80px 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .about {
+    .about-box-text {
+      flex-direction: column;
+
+      .about-text {
+        margin: 8px 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .about {
+    .contact-me-linkedin {
+      h2 {
+        display: none;
+      }
+    }
+
+    .contact-me-linkedin {
+      width: 100%;
+
+      .button {
+        width: 256px;
+      }
+    }
+  }
+}

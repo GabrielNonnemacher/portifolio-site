@@ -1,0 +1,34 @@
+<nav class="container">
+  <div class="content-container container-header">
+    <div class="box-header-left">
+      <div class="logo-header">
+        <a routerLink="/" class="content-logo-header">
+          {{ texts.NAME_AUTOR }}
+        </a>
+      </div>
+
+      <div class="links-header">
+        @for (link of listLinks(); track link.description) {
+        <lp-link-button [informationLink]="link"></lp-link-button>
+        }
+      </div>
+    </div>
+
+    <div class="box-header-right">
+      <lp-theme-mode class="theme-mode-header"></lp-theme-mode>
+
+      <button
+        mat-mini-fab
+        aria-label="Example icon button with a delete icon"
+        (click)="openSidebar()"
+        class="menu-header"
+      >
+        @if (isOpenSidebar()) {
+        <mat-icon class="content-animation">close</mat-icon>
+        } @else {
+        <mat-icon class="content-animation">menu</mat-icon>
+        }
+      </button>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,26 @@
+<div class="stepper">
+  @for (step of steps(); track step.id; let idx = $index) {
+  <div>
+    <div class="container-stepper">
+      <div class="circle"></div>
+
+      <div class="toggle" (click)="onClick(step.id)">
+        {{ step.id }}
+      </div>
+    </div>
+
+    <div *ngIf="idx < steps().length" class="container-stepper">
+      <div class="line" *ngIf="idx < steps().length - 1">
+        <div class="line-content"></div>
+      </div>
+      <div class="content">
+        <div class="{{ step.open ? 'open' : 'closed' }}">
+          <div class="typing-container">
+            <span>{{ step.description }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  }
+</div>

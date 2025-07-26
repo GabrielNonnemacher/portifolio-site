@@ -1,0 +1,130 @@
+.stepper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .container-stepper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 20px;
+    min-height: 100%;
+    position: relative;
+
+    .circle {
+      width: 16px;
+      height: 16px;
+      left: 10px;
+      margin: 4px 0;
+      border-radius: 50%;
+      background-color: var(--primary-color);
+      position: absolute;
+    }
+
+    .toggle {
+      width: 100%;
+      padding: 12px 40px;
+      border-radius: 8px;
+      font-size: var(--font-sz-lg);
+      color: var(--white);
+      background-color: var(--bg-theme-light);
+      transition: all 0.4s;
+      cursor: pointer;
+      font-weight: 600;
+      font-family: var(--font-style-2);
+
+      @media screen and (max-width: 1080px) {
+        font-size: var(--font-sz-md);
+      }
+    }
+
+    .toggle:hover {
+      background-color: var(--bg-theme-light-hover);
+    }
+
+    .line {
+      width: 20px;
+      min-height: 4px;
+      height: 100%;
+      margin: 4px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 8px;
+      position: absolute;
+
+      .line-content {
+        display: flex;
+        height: 80%;
+        width: 2px;
+        background-color: var(--font-color-2);
+        z-index: 2;
+      }
+    }
+
+    .content {
+      width: 100%;
+      min-height: 14px;
+      display: flex;
+      align-items: center;
+      padding: 12px 0px 12px 40px;
+      border-radius: 8px;
+      font-size: var(--font-sz-md);
+      color: var(--font-color-default);
+      background-color: transparent;
+      font-weight: var(--font-wgt);
+      font-family: var(--font-style-2);
+
+      @media screen and (max-width: 1080px) {
+        font-size: var(--font-sz-default);
+      }
+
+      .typing-container {
+        &::first-letter {
+          margin-left: 1.5em;
+        }
+      }
+
+      .open {
+        height: 100%;
+        padding: 12px 0;
+        animation: expand 0.4s ease-in-out;
+      }
+
+      .closed {
+        overflow: hidden;
+        height: 0px;
+        animation: collapsed 0.4s ease-in-out;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .toggle {
+    font-size: var(--font-sz-default);
+  }
+}
+
+@keyframes expand {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes collapsed {
+  from {
+    max-height: 100%;
+    opacity: 1;
+  }
+  to {
+    max-height: 0;
+    opacity: 0;
+  }
+}

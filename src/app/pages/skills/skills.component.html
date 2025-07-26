@@ -1,0 +1,29 @@
+<section class="container skills" id="skills">
+  <div class="content-container">
+    <div class="title">
+      <h2>Minhas Especialidades</h2>
+    </div>
+
+    <div class="content-cards">
+      @for (listSkill of listSkills(); track $index) {
+      <div
+        class="card"
+        [ngClass]="{ 'card-clicked': listSkill.id === clicked() }"
+        (click)="onClick(listSkill.id)"
+      >
+        <div class="title">
+          {{ listSkill?.title }}
+        </div>
+
+        <div class="image">
+          <img src="{{ listSkill?.imageURL }}" alt="" />
+        </div>
+
+        <div class="description">
+          {{ listSkill?.description }}
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</section>

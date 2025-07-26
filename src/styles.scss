@@ -1,1 +1,129 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+:root {
+  --font-logo: "Satisfy", cursive;
+  --font-sz-sm: 12px;
+  --font-sz-default: 14px;
+  --font-sz-md: 16px;
+  --font-sz-lg: 20px;
+  --font-sz-xlg: 24px;
+  --font-sz-xxlg: 32px;
+
+  --font-sz-title-sm: 40px;
+  --font-sz-title-md: 56px;
+
+  //--font-style-1: "Lato", serif;
+
+  --font-style-1: "Merriweather Sans", serif;
+  --font-style-2: "Source Code Pro", serif;
+
+  --font-color-dark: var(--white);
+  --font-color-light: var(--bg-theme-light);
+
+  --font-wgt-dark: 400;
+  --font-wgt-light: 600;
+
+  --primary-color: #00dddd;
+  --white: #fdfdfd;
+
+  --box-shadow: 0px 0px 4px #0000004f;
+  --box-shadow-2: 0px 4px 8px #0000006c;
+  --box-shadow-3: 0px 4px 8px #12101044;
+  --text-shadow: 0px 0px 2px #0000003a;
+
+  --bg-theme-dark: #191c1c;
+  --bg-theme-dark-hover: #141616;
+  --bg-theme-light: #0e3333;
+  --bg-theme-light-hover: #124141;
+
+  --font-color-theme-dark-2: var(--primary-color);
+  --font-color-theme-light-2: var(--bg-theme-light);
+  --bg-theme-dark-2: #1f2424;
+  --bg-theme-light-2: #135959;
+
+
+  --bg-theme-button: #134242;
+
+  --bg-body-dark: #1f2222;
+  --bg-body-light: #f7ffff;
+  --bg-deg-light: linear-gradient(180deg, #36cbd1, #3bdfda, rgba(153, 239, 244, 0.87), #f7ffff);
+  --bg-deg-dark: linear-gradient(180deg, #044d759f, #02525260, #1f2222, #1f2222);
+}
+
+.darkTheme {
+  --bg-theme: var(--bg-theme-dark);
+  --bg-theme-hover: var(--bg-theme-dark-hover);
+  --bg-body: var(--bg-body-dark);
+  --bg-card: var(--bg-theme-dark-2);
+  --bg-theme-2: var(--bg-theme-dark-2);
+  --font-color-default: var(--font-color-dark);
+  --font-color-2: var(--font-color-theme-dark-2);
+  --font-color-3: var(--font-color-2);
+  --font-color-4: var(--white);
+  --font-wgt: var(--font-wgt-dark);
+  --bg-deg: var(--bg-deg-dark);
+  --bg-sidebar: var(--bg-theme-dark-2);
+}
+
+.lightTheme {
+  --bg-theme: var(--bg-theme-light);
+  --bg-theme-hover: var(--bg-theme-light-hover);
+  --bg-body: var(--bg-body-light);
+  --bg-card: var(--bg-theme-light-hover);
+  --bg-theme-2: var(--bg-theme-light-2);
+  --font-color-default: var(--font-color-light);
+  --font-color-2: var(--font-color-theme-light-2);
+  --font-color-3: var(--white);
+  --font-color-4: var(--white);
+  --font-wgt: var(--font-wgt-light);
+  --bg-deg: var(--bg-deg-light);
+  --bg-sidebar: var(--bg-theme-light-2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content-container {
+  max-width: 1080px;
+  width: 80%;
+}
+
+.content-animation {
+  transition: all 0.6s ease-in-out;
+  animation: animationn 0.6s ease-in-out;
+}
+
+div {
+  .title {
+    color: var(--font-color-default);
+    font-family: var(--font-style-1);
+    font-size: var(--font-sz-xlg);
+  }
+}
+
+@keyframes animationn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
