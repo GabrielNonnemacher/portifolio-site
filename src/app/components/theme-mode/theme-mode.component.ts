@@ -24,7 +24,7 @@ export class ThemeModeComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    this.themeMode.set(this.getThemeMode() ?? ThemeModeEnum.lightTheme);
+    this.themeMode.set(this.getThemeMode() ?? this.themeMode());
     this.localStorageService.set(THEME_MODE_KEY, this.themeMode());
   }
 
