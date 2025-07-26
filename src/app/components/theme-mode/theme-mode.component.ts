@@ -15,7 +15,7 @@ import { ThemeModeEnum } from '../../utils/themeMode.enum';
 })
 export class ThemeModeComponent implements OnInit {
   localStorageService = inject(LocalStorageService);
-  themeMode = signal<string>(ThemeModeEnum.lightTheme);
+  themeMode = signal<string>(ThemeModeEnum.darkTheme);
   isLightMode = ThemeModeEnum.lightTheme;
 
   @HostListener('window:resize')
